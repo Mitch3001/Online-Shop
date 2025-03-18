@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #009fa5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #00b2b9;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #009fa5;
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #00e6ee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.btn {
+    background-color: #d70f9b;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.contact-form {
+    background-color: #009fa5;
+    padding: 20px;
+}
+
+.contact-form input {
+    background-color: #00cad1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.socials {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.product-card {
+    background-color: #00c9d0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.063);
+    padding: 20px;
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+}
+
+.product-card:hover {
+    transform: scale(0.95); /* Уменьшаем карточку на 5% при наведении */
+}
+
+html, body {
+    height: 100%; /* Убедитесь, что высота html и body равна 100% */
+    margin: 0; /* Убираем отступы */
+}
+
+body {
+    display: flex; /* Используем Flexbox для вертикального выравнивания */
+    flex-direction: column; /* Устанавливаем направление по вертикали */
+}
+
+main {
+    flex: 1; /* Основной контент занимает оставшееся пространство */
+}
+
+footer {
+    background-color: #00b2b9; /* Цвет фона футера */
+    color: white; /* Цвет текста футера */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px 0; /* Отступы для футера */
+}
+
+nav {
+    text-align: center; /* Центрируем текст внутри навигации */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 4; /* Убираем отступы */
+    margin: 4; /* Убираем отступы */
+}
+
+nav ul li {
+    display: inline; /* Отображаем элементы списка в строку */
+    margin: 0 15px; /* Добавляем отступы между ссылками */
+}
+
+nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание текста */
+    color: #ffffff; /* Цвет текста ссылок */
+    font-size: 15px; /* Размер шрифта */
+}
+
+.btn {
+    background-color: #28a745; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 15px; /* Отступы кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 25px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Плавный переход для анимации */
+}
+
+.btn:hover {
+    transform: scale(0.95); /* Уменьшение кнопки при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+}
+
+
+
+/* Центрирование заголовка */
+h2 {
+    text-align: center; /* Центрируем текст заголовка */
+    margin-bottom: 20px; /* Добавим отступ снизу для расстояния до товаров */
+}
+
+/* Стили для контейнера с товарами */
+.product-grid {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    gap: 20px; /* Пробел между товарами */
+    max-width: 1200px; /* Максимальная ширина контейнера (по желанию) */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+}
+
+/* Стили для карточек товара */
+.product-card {
+    background-color: #f9f9f9; /* Цвет фона карточки товара */
+    border: 1px solid #ddd; /* Рамка вокруг карточки */
+    border-radius: 8px; /* Скругление углов карточки */
+    padding: 15px; /* Отступ внутри карточки */
+    width: 250px; /* Ширина карточки (по желанию) */
+    text-align: center; /* Центрируем текст внутри карточки */
+}
